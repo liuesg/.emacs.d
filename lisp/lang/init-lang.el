@@ -31,8 +31,8 @@
 
 ;;(require 'init-java)
 ;; language server
-(require 'init-eglot) ; eglot
-;(require 'init-lsp)   ; lsp, enable this line if you like lsp-mode and disable eglot line
+;(require 'init-eglot) ; eglot
+(require 'init-lsp)   ; lsp, enable this line if you like lsp-mode and disable eglot line
 
 ;; specific languages
 (require 'init-lang-go)

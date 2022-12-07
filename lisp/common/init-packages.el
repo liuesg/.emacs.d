@@ -199,5 +199,10 @@
 (use-package restart-emacs)
 
 
+;; Settings for which-key - suggest next key
+(use-package which-key
+  :diminish
+  :hook (after-init . which-key-mode))
+  
 
 (provide 'init-packages)

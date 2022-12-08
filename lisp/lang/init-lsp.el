@@ -18,7 +18,7 @@
 ;; if you are helm user
 ;(use-package helm-lsp :commands helm-lsp-workspace-symbol)
 ;; if you are ivy user
-;(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+(use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
 
 ;; optionally if you want to use debugger

@@ -1,3 +1,4 @@
+;;; code:
 (use-package dashboard
   :init (dashboard-setup-startup-hook))
 
@@ -34,7 +35,14 @@
    :bind (("C-s" . swiper)
           ("C-r" . swiper-isearch-backward))
    :config (setq swiper-action-recenter t
-                 swiper-include-line-number-in-search t))	      
+                 swiper-include-line-number-in-search t))
+
+
+
+
+
+(use-package flycheck
+  :init (global-flycheck-mode))
 
 
 

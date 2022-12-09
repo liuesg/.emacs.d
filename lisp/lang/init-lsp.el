@@ -25,6 +25,8 @@
 (use-package dap-mode)
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 
+
+(setq lsp-enable-symbol-highlighting 1)
 ;; optional if you want which-key integration
 (use-package which-key
    :config

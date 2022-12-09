@@ -24,7 +24,8 @@
 ;; optionally if you want to use debugger
 (use-package dap-mode)
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
-
+(setq lsp-ui-sideline-show-hover 1)
+(setq lsp-ui-sideline-show-code-action 1)
 
 (setq lsp-enable-symbol-highlighting 1)
 ;; optional if you want which-key integration

@@ -3,10 +3,10 @@
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   (setq lsp-keymap-prefix "C-c l")
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
-         (go-mode . lsp)
+         (go-mode . lsp-deferred)
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
-  :commands lsp)
+  :commands lsp lsp-deferred)
 ;  (setq lsp-auto-guess-root t
 ;	    lsp-headerline-breadcrumb-enable nil
 ;	    lsp-keymap-prefix "C-c l"

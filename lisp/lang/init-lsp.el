@@ -5,6 +5,7 @@
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
          (go-mode . lsp-deferred)
 	 (c-mode . lsp-deferred)
+	 (c++-mode . lsp-deferred)
 	 ;(go-mode . lsp-deferred)
 	 
          ;; if you want which-key integration

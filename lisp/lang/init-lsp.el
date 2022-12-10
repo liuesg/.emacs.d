@@ -1,12 +1,16 @@
 (use-package lsp-mode
-  :init
+:init
   ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
   (setq lsp-keymap-prefix "C-c l")
   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
          (go-mode . lsp-deferred)
+	 (c-mode . lsp-deferred)
+	 ;(go-mode . lsp-deferred)
+	 
          ;; if you want which-key integration
          (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp lsp-deferred)
+
 ;  (setq lsp-auto-guess-root t
 ;	    lsp-headerline-breadcrumb-enable nil
 ;	    lsp-keymap-prefix "C-c l"
@@ -26,6 +30,11 @@
 ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
 (setq lsp-ui-sideline-show-hover 1)
 (setq lsp-ui-sideline-show-code-action 1)
+(setq lsp-ui-sideline-show-diagnostics 1)
+(setq lsp-ui-peek-enable 1)
+(setq lsp-ui-peek-show-directory 1)
+(lsp-treemacs-sync-mode 1)
+
 
 (setq lsp-enable-symbol-highlighting 1)
 ;; optional if you want which-key integration

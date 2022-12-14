@@ -35,7 +35,7 @@
 (setq lsp-ui-peek-enable 1)
 (setq lsp-ui-peek-show-directory 1)
 (lsp-treemacs-sync-mode 1)
-
+(lsp-modeline-code-actions-mode 1)
 
 (setq lsp-enable-symbol-highlighting 1)
 ;; optional if you want which-key integration
